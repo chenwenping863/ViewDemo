@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_marginBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/baifumei_seleting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/purse_baifumei_payment_mouth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="7月份账单"
+            android:textSize="18dp"/>
+
+        <Space style="@style/horizontal_space"/>
+
+        <TextView
+            android:id="@+id/purse_baifumei_payment_deadline_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后还款16年7月12日"
+            android:textSize="12dp"
+            android:paddingRight="5dp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/purse_index_dummy_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/mgjpf_white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="剩余应还金额(元)"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已逾期33天"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:background="@drawable/purse_baifumei_payment_btn_shap"/>
+
+        <Space style="@style/horizontal_space"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账单详情"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:paddingRight="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mgjpf_white">#e2dadd</color>
+    <color name="mgjpf_background">#b7b4b5</color>
+    <color name="purse_account_safe_bg_color">#252324</color>
+    <color name="purse_account_safe_color">#605d5e</color>
+
+</resources>

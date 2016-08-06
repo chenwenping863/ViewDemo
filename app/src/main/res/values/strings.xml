@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PaymentList</string>
+
+
+    <string name="purse_baifumei_payment_btn">还款</string>
+    <string name="purse_baifumei_balancedue_total_text">合计:</string>
+
+</resources>

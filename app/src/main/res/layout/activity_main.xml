@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mgjpf_background"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.example.chenwenping.paymentlist.BaifumeiPaymentListContainer
+                android:id="@+id/baidumei_payment_list_container_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+            </com.example.chenwenping.paymentlist.BaifumeiPaymentListContainer>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cashier_sku_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/purse_baifumei_balancedue_bottom_container_height"
+        android:layout_gravity="bottom"
+        android:animateLayoutChanges="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/mgjpf_white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cashier_pay_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/purse_baifumei_balancedue_total_text"
+                android:textColor="@color/purse_account_safe_bg_color"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/cashier_bill_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purse_account_safe_bg_color"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="0.00"/>
+        </LinearLayout>
+
+         <Space style="@style/horizontal_space"/>
+        <Button
+            android:id="@+id/purse_baifumei_payment_button"
+            android:layout_width="@dimen/purse_baifumei_payment_button_width"
+            android:layout_height="@dimen/purse_baifumei_payment_button_height"
+            android:layout_marginRight="10dp"
+            android:text="@string/purse_baifumei_payment_btn"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/purse_baifumei_payment_btn_shap"/>
+    </LinearLayout>
+</FrameLayout>

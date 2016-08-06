@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="purse_baifumei_balancedue_bottom_container_height">60dp</dimen>
+
+    <dimen name="purse_baifumei_payment_button_width">90dp</dimen>
+    <dimen name="purse_baifumei_payment_button_height">34dp</dimen>
+
+</resources>
