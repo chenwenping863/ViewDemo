@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'findbugs'
+apply plugin: 'pmd'
+apply plugin: 'checkstyle'
 
 android {
     compileSdkVersion 24
@@ -23,4 +26,64 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0'
+}
+
+
+task checkstyle(type: Checkstyle){
+    configFile = file("${project.rootDir}/src/main/java/checkstyle/code_check.xml")
+  //  configFile = file("google_android_checks.xml")
+    source = fileTree('src')
+    ignoreFailures = true
+    classpath = files()
+}
+
+task findbugs(type: FindBugs, dependsOn: 'compileDebugSources') {
+    classes = fileTree("build/intermediates/classes/debug/")
+    source = fileTree('src')
+    classpath = files()
+    ignoreFailures = true
+    //reportsDir = file("$project.buildDir/outputs/")
+    reportLevel = "medium"
+    effort = "max"
+    reports {
+        xml.enabled = true
+        html.enabled = false
+    }
+}
+
+task pmd (type: Pmd) {
+    ruleSets = [
+            'java-android',
+            'java-basic',
+            'java-braces',
+            'java-clone',
+            'java-codesize',
+            //'java-comments',
+            'java-controversial',
+            'java-coupling',
+            'java-design',
+            'java-empty',
+            'java-finalizers',
+            'java-imports',
+            'java-j2ee',
+            'java-javabeans',
+            'java-junit',
+            'java-logging-jakarta-commons',
+            'java-logging-java',
+            'java-migrating',
+            'java-naming',
+            'java-optimizations',
+            'java-strictexception',
+            'java-strings',
+            'java-sunsecure',
+            'java-typeresolution',
+            'java-unnecessary',
+            'java-unusedcode'
+    ]
+    source = fileTree('src')
+    ignoreFailures = true
+    reports {
+        xml.enabled = true
+        html.enabled = false
+    }
 }

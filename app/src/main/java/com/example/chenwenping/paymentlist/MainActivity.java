@@ -6,6 +6,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     private BaifumeiPaymentListContainer  mBaifumeiPaymentListContainer;
+    private String skjdsk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

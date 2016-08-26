@@ -17,10 +17,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/baifumei_seleting_btn"
+        <CheckBox
+            android:id="@+id/meibei_instalment_checkbox"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:button="@drawable/paysdk_maibei_installment_item_checked_indicator"
+            android:checked="false"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/purse_baifumei_payment_mouth_text"

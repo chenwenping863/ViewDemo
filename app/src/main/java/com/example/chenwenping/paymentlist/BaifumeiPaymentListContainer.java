@@ -29,7 +29,7 @@ public class BaifumeiPaymentListContainer extends LinearLayout {
     protected View newBillListView() {
         View billListView = View.inflate(getContext(), getListViewLayout(), null);
 
-        RadioButton radioButton = (RadioButton) billListView.findViewById(R.id.baifumei_seleting_btn);
+       // RadioButton radioButton = (RadioButton) billListView.findViewById(R.id.baifumei_seleting_btn);
 
         return billListView;
 
